@@ -52,13 +52,13 @@ return (x * i);
 }
 
 /**
- * div - it is divided two integer.
+ * division - it is divided two integer.
  * @x: first int .
  * @i: second int.
- * Return - divition result .
+ * Return - division result .
  */
 
-int div(int x, int i)
+int division(int x, int i)
 {
 return (x / i);
 }
