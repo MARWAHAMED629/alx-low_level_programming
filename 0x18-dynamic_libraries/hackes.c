@@ -12,7 +12,7 @@
  * Return: Always returns void.
  */
 
-int my_print(const char *format, ...)
+int my_print(__attribute__((unused)) const char *format, ...)
 {
 	write(1, "9 8 10 24 75 +9\n", 17);
 	write(1, "Congratulations, you win the Jackpot!\n", 38);
