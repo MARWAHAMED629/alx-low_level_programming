@@ -1,24 +1,13 @@
 CC = gcc
-SRC = $(wildcard *.c)
+SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
-
-all: $(NAME)
-
-$(NAME): $(OBJ)
-	$(CC) $^ -o $@ -Wall -Werror -Wextra -pedantic
-
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 clean:
-	$(RM) *~ *.o
-
+	$(RM) *~ $(NAME)
 oclean:
 	$(RM) $(OBJ)
-
 fclean: clean oclean
-	$(RM) $(NAME)
-
-re: fclean all
-
-# Check for missing m.h header file
-$(OBJ): m.h
+re: oclean alli
