@@ -27,7 +27,7 @@ int binary_search(int *array, size_t size, int value)
 		printf("%d\n", array[z]);
 		
 		/* Calculate the middle index */
-		i = l + (r - l) / 2;
+		z = l + (r - l) / 2;
 		
 		/* If the middle an element is the value */
 		if (array[z] == value)
